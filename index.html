@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: #d9d9d9;
+        }
+
+        .one {
+            text-align: center;
+        }
+
+        .two {
+            text-align: inherit;
+        }
+
+        h3 {
+            color: red;
+        }
+
+        .am {
+            font-size: 12px;
+        }
+
+        .interest {
+            font-size: 12px;
+        }
+
+        h3 {
+            text-align: left;
+        }
+
+        span table tr {
+            text-align: center;
+        }
+
+        #acd {
+            text-align: left;
+        }
+
+        .please {
+            text-align: left;
+        }
+
+        .comment {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contacts {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .rules {
+            margin-left: auto;
+        }
+    </style>
+    <title>Lab Task 1</title>
+</head>
+
+<body>
+
+    <h4><span>*</span> - Denotes Required Information</h4>
+    <h4> <b>> 1 Donation</b> > 2 Confirmation > Thank You</h4>
+    <h3> <b> <b> Donar Information </b> </b> </h3>
+
+    <form class=one action="/action_page.php">
+
+        <label>First name:</label>
+        <input><br>
+        <label>Last name:</label>
+        <input><br>
+        <label>Company:</label>
+        <input><br>
+        <label>Address 1:</label>
+        <input><br>
+        <label>Address 2:</label>
+        <input><br>
+        <label>City:</label>
+        <input><br> <br>
+        <label> State *</label>
+        <select>
+            <option>Select a State </option>
+            <option>Dhaka</option>
+            <option>Cumilla</option>
+            <option>Chattogram</option>
+            <option>Sylhet</option>
+            <option>Khulna</option>
+            <option>Rajshahi</option>
+            <option>Borisal</option>
+        </select><br><br>
+        <label>Zip Code:</label>
+        <input><br><br>
+        <label>Country:</label>
+        <select>
+            <option>Select a Country </option>
+            <option>Bangladesh</option>
+            <option>India</option>
+            <option>Pakistan</option>
+            <option>china</option>
+            <option>Nepal</option>
+            <option>Malaysia</option>
+            <option>Oman</option>
+            <option>Qatar</option>
+        </select><br><br>
+        <label>Phone:</label>
+        <input><br><br>
+        <label>Fax:</label>
+        <input><br><br>
+        <label>Email:</label>
+        <input><br><br>
+        <h4>Donation Amount:
+            <span class="am">
+                <input type="radio" id="amount1" name="Amount" value="None">
+                <label for="amount1">None</label>
+                <input type="radio" id="amount2" name="Amount" value="50">
+                <label for="amount2">$50</label>
+                <input type="radio" id="amount3" name="Amount" value="75">
+                <label for="amount3">$75</label>
+                <input type="radio" id="amount4" name="Amount" value="100">
+                <label for="amount4">$100</label>
+                <input type="radio" id="amount5" name="Amount" value="250">
+                <label for="amount5">$250</label>
+                <input type="radio" id="amount6" name="Amount" value=" Other">
+                <label for="amount6"> Other</label> <br>
+            </span>
+        </h4>
+        <label> <b> Other Amount $ </b></label>
+        <input><br><br>
+
+        <h4> Recurring Donation <span class="interest"> <input type="checkbox" id="don" name="hg" value="iu">
+                <label for="basis"> I am interested in giving on a regular basis </label><br>
+            </span>
+        </h4>
+        <label> Monthly Credit Card $ </label>
+        <input>
+        <label>For</label>
+        <input>
+        <label>Months</label> <br><br>
+
+
+
+        <h3 class="rd">Honorarium and Memorial Donation Information</h3>
+        <!--
+        <span class="table">
+            <table>
+                <tr>
+                    <td>I would like to make this <br> donation </td>
+                    <td> <input type="radio" id="ho" name="ho" value="Honor">
+                        <label for="do"> To Honor </label><br>
+                        <input type="radio" id="amount2" name="Amount" value="memory">
+                        <label for="amou">In Memory of</label>
+                    </td>
+                </tr>
+            </table>
+        </span> 
+    -->
+        <p>I would like to make this <input type="radio" id="ho" name="ho" value="Honor">
+            <label for="do"> To Honor </label><br> donation
+            <input type="radio" id="amount2" name="Amount" value="memory">
+            <label for="amou">In Memory of</label>
+        </p> <br>
+
+
+        <label for="name"> Name </label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for=" Acknowledge">Acknowledge Donation to </label>
+        <input type="text" id="acd" name="Acknowledge"><br>
+
+        <label for="Address"> Address </label>
+        <input type="text" id="adrs" name="Address"><br>
+
+        <label for="City"> City </label>
+        <input type="text" id="ct" name="City"><br><br>
+
+        <label> State </label>
+        <select>
+            <option>Select a State </option>
+            <option>Dhaka</option>
+            <option>Cumilla</option>
+            <option>Chattogram</option>
+            <option>Sylhet</option>
+            <option>Khulna</option>
+            <option>Rajshahi</option>
+            <option>Borisal</option>
+        </select><br>
+
+        <label>Zip </label>
+        <input><br>
+
+        <h3>Additional Information</h3>
+        <p class="please"> Please enter your name , company or organisation as you would like
+            it to appear in our publication </p>
+
+
+
+        <label for="name"> Name </label>
+        <input type="text" id="name" name="name"><br>
+
+        <span class="rules">
+            <input type="checkbox" id="don" name="hg" value="iu">
+            <label for="basis"> I would like my gift to remain anonymous </label> <br>
+
+            <input type="checkbox" id="don" name="hg" value="iu">
+            <label for="basis"> My employer offers a matching gift program .
+                I will mail the matching gift from. </label> <br>
+
+            <input type="checkbox" id="don" name="hg" value="iu">
+            <label for="basis"> Please save the cost of acknowledge this gift by not mailing a thank you letter.
+            </label>
+            <br>
+        </span>
+
+        <table class="comment">
+            <tr>
+                <td>
+                    <h4>Comments</h4>
+                    <h5>(Please type any questions of feedback<br> here)</h5>
+                </td>
+                <td> <textarea rows="5" cols="60" name="comment" form="usrform">
+                Enter text here...</textarea>
+                </td>
+
+            </tr>
+        </table>
+        <table class="contacts">
+            <tr>
+                <td>
+                    <h4>How may we contact you?</h4>
+                </td>
+                <td>
+                    <input type="checkbox" id="don" name="hg" value="iu">
+                    <label for="con"> Email </label> <br>
+
+                    <input type="checkbox" id="don" name="hg" value="iu">
+                    <label for="con"> Postal Mail </label> <br>
+
+                    <input type="checkbox" id="don" name="hg" value="iu">
+                    <label for="con"> Telephone </label> <br>
+
+                    <input type="checkbox" id="don" name="hg" value="iu">
+                    <label for="con"> Fax </label> <br>
+
+
+
+                </td>
+            </tr>
+        </table>
+
+        <pre> I would like to receive newsletters and information  about special events by:</pre>
+
+        <input type="checkbox" id="don" name="hg" value="iu">
+        <label for="con"> Email </label> <br>
+
+        <input type="checkbox" id="don" name="hg" value="iu">
+        <label for="con"> Postal Mail </label> <br>
+
+        <input type="checkbox" id="don" name="hg" value="iu">
+        <label for="basis"> I would like information about volenteering with ....</label> <br><br>
+
+
+        <button type="button" onclick="alert('Hello world!')"> Reset </button>
+        <button type="button" onclick="alert('Hello world!')"> Continue </button>
+
+    </form>
+
+</body>
+
+</html>
